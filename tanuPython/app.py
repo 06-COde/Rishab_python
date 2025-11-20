@@ -6,7 +6,7 @@ class FakeAPIService:
         user = {
             "id": len(self.db["users"]) + 1,
             "name": name,
-            "email": email
+            "email": email 
         }
         self.db["users"].append(user)
         return {"status": "success", "data": user}
